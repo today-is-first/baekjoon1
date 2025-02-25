@@ -35,12 +35,8 @@ public class Main {
 			st = new StringTokenizer(br.readLine());
 			int from = Integer.parseInt(st.nextToken());
 			int to = Integer.parseInt(st.nextToken());
-			if (!map.containsKey(from))
-				map.put(from, new ArrayList<Integer>());
-			if (!map.containsKey(to))
-				map.put(to, new ArrayList<Integer>());
-			map.get(from).add(to);
-			map.get(to).add(from);
+			map.computeIfAbsent(from, k -> new ArrayList<>()).add(to);
+			map.computeIfAbsent(to, k -> new ArrayList<>()).add(from);
 		}
 
 		map.keySet().forEach(k -> search(k));
