@@ -24,4 +24,10 @@ https://www.acmicpc.net/problem/2580
 		System.err.println(sb);
 	}
 
+		for(int i=0; i<N; i++) {
+			for(int j=0; j<M; j++) {
+				
+			}
+		}
+
 ```
