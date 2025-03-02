@@ -8,6 +8,9 @@ https://www.acmicpc.net/problem/1967
 ### 스도쿠
 https://www.acmicpc.net/problem/2580
 
+### 합이 0인 네 정수
+https://www.acmicpc.net/problem/7453
+
 ---
 
 코테 유틸
